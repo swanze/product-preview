@@ -1,0 +1,121 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .component {
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .img-div {
+    flex: 1;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .particulars {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .categ h6 {
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    line-height: 1em;
+    color: hsl(212, 21%, 14%);
+  }
+
+  .desc {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6em;
+  }
+
+  .pricetag {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .oldprice{
+    padding-right: 10px;
+  }
+
+  .oldprice h6 {
+    color: hsl(228, 12%, 48%);
+    font-size: 16px;
+  }
+
+  .newprice h1 {
+    color: hsl(158, 36%, 37%);
+  }
+
+  .addtocart{
+    align-items: center;
+    text-align: center;
+  }
+  .addtocart img{
+    height: 25px;
+    width: 25px;
+  }
+
+  .addtocart a{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+
+  .addtocart a:hover{
+    background-color: hsl(160, 38%, 27%);
+    transition: 0.3s;
+  }
+
+  @media (max-width:768px) {
+    body{
+        height: fit-content;
+    }
+    .component {
+      display: flex;
+      flex-direction: column;
+      margin: 40px 20px;
+    }
+    img{
+        max-height: 600px;
+        width: 100%;
+        object-fit: cover;
+    }
+  }
+ 
